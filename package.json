@@ -202,7 +202,7 @@
 
   "jest": {
     "coverageDirectory": ".",
-    "testResultsProcessor": "jest-sonar-reporter",
+    "testResultsProcessor": "jest-sonar-reporter"
   },
   
   "repository": {
