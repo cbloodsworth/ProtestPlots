@@ -200,7 +200,11 @@
     "test": "jest --coverage"
   },
 
-  "testResultsProcessor": "jest-sonar-reporter",
+  "jest": {
+    "coverageDirectory": ".",
+    "testResultsProcessor": "jest-sonar-reporter",
+  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cbloodsworth/JS-Test.git"
