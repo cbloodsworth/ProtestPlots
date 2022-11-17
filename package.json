@@ -82,6 +82,7 @@
     "is-number": "^7.0.0",
     "is-stream": "^2.0.1",
     "isexe": "^2.0.0",
+    "isomorphic-unfetch": "^3.1.0",
     "istanbul-lib-coverage": "^3.2.0",
     "istanbul-lib-instrument": "^5.2.0",
     "istanbul-lib-report": "^3.0.0",
