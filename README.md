@@ -20,3 +20,19 @@ Ensure you have Node.js and Node Package Manager installed. To ensure you have i
 and you should see two version outputs. If you don't have it installed, visit https://nodejs.org/en/download/ and under LTS, download and install the version relative to your operating system. 
 
 ### React
+
+To install React and other dependencies, run in the terminal *while in the root directory*
+
+`npm install`
+
+This may take a while but will install required dependencies.
+
+## How to Run
+
+To test the site, run in the terminal *while in the root directory*
+
+`npm run dev`
+
+Now go into a browser of your choosing and enter the url:
+
+`localhost:3000`
