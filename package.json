@@ -202,7 +202,9 @@
   },
   "scripts": {
     "test": "jest --coverage",
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "jest": {
     "coverageDirectory": ".",
