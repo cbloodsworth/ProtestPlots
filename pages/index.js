@@ -15,7 +15,7 @@ export default class extends Component {
     render () {
         return (
             <div className="homepage-wrapper">
-                <h1>Random dog!</h1>
+                <h1>Welcome to Protest Plots!</h1>
                 <img src={this.props.imageURL} width="300" />
             </div>
         )
