@@ -14,9 +14,19 @@ export default class extends Component {
     }
     render () {
         return (
-            <div className="homepage-wrapper">
+            
+            <div className="homepage-wrapper">  
                 <h1>Welcome to Protest Plots!</h1>
-                <img src={this.props.imageURL} width="350" />
+                    <div className="zipcode-input">
+                        <h2>Enter your zipcode: </h2>
+                        <label for="zipcode"></label>
+                    <input type="text" id="zipcode" name="zipcode" maxLength="5" />
+                </div>
+         
+                <article className="about-us">
+                    <h3>What is Protest Plots?</h3>
+                    <p>ProtestPlots is a centralized hub of information for people to gather information about protests nearby.</p>
+                </article>
             </div>
         )
     }
