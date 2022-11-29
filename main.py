@@ -7,8 +7,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 import json
 
-from bs4 import BeautifulSoup
-
 # open the site and block pop-ups
 
 chrome_options = webdriver.ChromeOptions()
@@ -54,10 +52,8 @@ time.sleep(2)
 
 # need to click the "see more" button at the bottom
 
-
-# driver.find_element(By.XPATH, '//button[normalize-space()="See more"]').click()
-
-# button2 = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
-# '//*[@id="mount_0_0_18"]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div[4]/div/div/div[3]/div/div/div/div[5]'
-
-
+button2 = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "[aria-label='See more']"))).click()
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+time.sleep(3)
+button3 = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "[aria-label='See more']"))).click()
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
