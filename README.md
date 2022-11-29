@@ -1,4 +1,5 @@
 # ProtestPlots Readme
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cbloodsworth_JS-Test&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=cbloodsworth_JS-Test)
 ## Project Information
 ProtestPlots is a centralized hub of information for people to gather information about protests nearby. It gathers its data through a Python Scraper powered by Selenium and displays the information using a front-end consisting of React and Next.js.
 
