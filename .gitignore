@@ -1,0 +1,2 @@
+# Ignore config.json, which holds the token
+credentials.json

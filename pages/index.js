@@ -16,7 +16,7 @@ export default class extends Component {
         return (
             <div className="homepage-wrapper">
                 <h1>Welcome to Protest Plots!</h1>
-                <img src={this.props.imageURL} width="300" />
+                <img src={this.props.imageURL} width="350" />
             </div>
         )
     }
