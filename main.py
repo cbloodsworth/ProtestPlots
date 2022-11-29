@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+import json
 
 # open the site and block pop-ups
 
@@ -24,10 +25,13 @@ password = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SE
 # login button is type 'submit'
 # enter username and password
 
+f = open('credentials.json')
+data = json.load(f)
+
 username.clear()
-username.send_keys("joemudah@woodycooks.com")
+username.send_keys(data['username'])
 password.clear()
-password.send_keys("CEN3031!")
+password.send_keys(data['password'])
 time.sleep(2)
 # click the log in button
 button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
