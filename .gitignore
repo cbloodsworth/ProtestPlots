@@ -1,3 +1,6 @@
-# Ignore config.json, which holds the token
+# Ignore important credentials
 credentials.json
+
+# Ignore bloat
 .next/
+node_modules/

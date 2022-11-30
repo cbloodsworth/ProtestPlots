@@ -93,4 +93,3 @@ def readPageSource(filename):
 ############ ACTUAL SCRIPT
 scrape("change later")
 readPageSource('page_source.html')
-print("exited")
