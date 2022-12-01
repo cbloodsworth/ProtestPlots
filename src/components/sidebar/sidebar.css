@@ -1,0 +1,82 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 110%;
+    padding: 10px;
+  }
+  
+  .sidebar-h2 {
+    margin: 0;
+  }
+  
+  .sidebar-label {
+    margin: 10px 0;
+    text-align: left;
+    width: 80%;
+  }
+  
+  .sidebar-input,
+  .sidebar-textarea {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid var(--main-blue);
+    border-radius: 2px;
+    padding: 10px;
+  }
+  
+  .sidebar-textarea {
+    height: 50px;
+  }
+  
+  .sidebar-textarea::placeholder {
+    font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+  }
+  
+  .sidebar-submit {
+    justify-self: flex-end;
+    font-size: 3rem;
+    color: var(--main-blue);
+  }
+  
+  @media screen and (min-width: 799px) {
+    .sidebar {
+      display: grid;
+      grid-template-areas:
+        'label'
+        'header'
+        'zipcode'
+        'submit';
+      align-items: start;
+      align-content: space-between;
+      justify-content: unset;
+      gap: 0.5vw 1vw;
+      padding: 40px;
+    }
+  
+    .sidebar-h2 {
+      grid-area: header;
+      text-align: left;
+    }
+  
+    .sidebar-label {
+      grid-area: label;
+      margin: 0;
+    }
+  
+    #zipcode {
+      grid-area: zipcode;
+    }
+  
+    .sidebar-textarea {
+      height: 150px;
+    }
+  
+    .sidebar-submit {
+      grid-area: submit;
+    }
+  }
