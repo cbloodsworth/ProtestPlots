@@ -1,0 +1,74 @@
+.homepage-wrapper {
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+.homepage-wrapper {
+    background-image: url(../assets/background.jpg);
+
+}
+.homepage-wrapper::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    background: rgba(244, 241, 241, 0.5);
+}
+ 
+.homepage-wrapper h1 {
+    padding: 20px;
+    margin: 0;
+    font-size: 72px;
+}
+
+.homepage-wrapper h2 {
+    padding: 20px;
+    margin: 0;
+    font-size: 40px;
+}
+
+.homepage-wrapper h3 {
+    padding: 0px;
+    margin: 0;
+    font-size: 30px;
+    
+}
+.homepage-wrapper .login-button{
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.homepage-wrapper .zipcode-input{
+    position: relative;
+    top: 25%;
+}
+.homepage-wrapper input
+{
+    padding: 10px;
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+    width: 15%;
+}
+.homepage-wrapper .about-us{
+    position: relative;
+    top: 35%
+}
+.homepage-wrapper img {
+    max-width: 100%;
+}
